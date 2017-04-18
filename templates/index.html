@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Bootstrap inspired Braintree Hosted Fields example -->
+    <div class="panel panel-default bootstrap-basic">
+        <div class="panel-heading">
+            <h3 class="panel-title">Enter Card Details</h3>
+        </div>
+        <form class="panel-body">
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label class="control-label" for="amount">Amount</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control" id="amount" placeholder="price">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label class="control-label" for="firstname">First Name</label>
+                    <!--  Hosted Fields div container -->
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" />
+                </div>
+                <div class="form-group col-xs-6">
+                    <label class="control-label" for="lastname">Last Name</label>
+                    <!--  Hosted Fields div container -->
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    <label class="control-label">Card Number</label>
+                    <!--  Hosted Fields div container -->
+                    <div class="form-control" id="card-number"></div>
+                    <span class="helper-text"></span>
+                </div>
+                <div class="form-group col-xs-4">
+                    <div class="row">
+                        <label class="control-label col-xs-12">Expiration Date</label>
+                        <div class="col-xs-6">
+                            <!--  Hosted Fields div container -->
+                            <div class="form-control" id="expiration-month"></div>
+                        </div>
+                        <div class="col-xs-6">
+                            <!--  Hosted Fields div container -->
+                            <div class="form-control" id="expiration-year"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label class="control-label">Security Code</label>
+                    <!--  Hosted Fields div container -->
+                    <div class="form-control" id="cvv"></div>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label class="control-label">Zipcode</label>
+                    <!--  Hosted Fields div container -->
+                    <div class="form-control" id="postal-code"></div>
+                </div>
+            </div>
+
+
+            <button value="submit" id="submit" class="btn btn-success btn-lg center-block">Pay with <span id="card-type">Card</span></button>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+        <!-- Load the required client component. -->
+        <script src="https://js.braintreegateway.com/web/3.11.0/js/client.min.js"></script>
+
+        <!-- Load Hosted Fields component. -->
+        <script src="https://js.braintreegateway.com/web/3.11.0/js/hosted-fields.min.js"></script>
+        <script src='/static/javascript/index.js'></script>
+</body>
+
+</html>

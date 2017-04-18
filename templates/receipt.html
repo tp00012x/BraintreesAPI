@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Receipt</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <strong>Name</strong>
+                        <p><span class="firstname"></span><br><span class="lastname"></span></p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <h1>Receipt</h1>
+                    </div>
+                    </span>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="col-md-9">Card Number</th>
+                                <th class="col-md-3 text-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-md-9">4111 1111 1111 1111</td>
+
+                                <td class="col-md-3 text-right amount"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-right">
+                                    <p>
+                                        <strong>Tax:</strong>
+                                    </p>
+                                </td>
+                                <td class="text-right">
+                                    <p>
+                                        <strong>$0.00</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right">
+                                    <h4><strong>Total:</strong></h4></td>
+                                <td class="text-right text-danger">
+                                    <h4 class="amount"><strong>$25.00</strong></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5>Your Payment was Successful!</h5>
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <!-- Load the required client component. -->
+    <script src="https://js.braintreegateway.com/web/3.11.0/js/client.min.js"></script>
+
+    <!-- Load Hosted Fields component. -->
+    <script src="https://js.braintreegateway.com/web/3.11.0/js/hosted-fields.min.js"></script>
+    <script src='/static/javascript/receipt.js'></script>
+</body>
+
+</html>
